@@ -1,5 +1,8 @@
 import Image from "next/image";
 import localFont from "next/font/local";
+import QAZI from "./Components/QAZI.js";
+import TiltedCard from "./Components/TiltedCard/TiltedCard.jsx"
+import LogoWall from "./Components/LogoWall/LogoWall.jsx"
 
 const dongleFont = localFont({
   src: "fonts/Dongle-Regular.ttf"
@@ -13,6 +16,7 @@ const himelodyFont = localFont({
   src: "fonts/HiMelody-Regular.ttf"
 })
 
+const logoImgs = [{imgURL: "/ProjectsTitle/1.png", alt: "test"}]
 
 export default function Home() {
   return (
@@ -20,11 +24,40 @@ export default function Home() {
     <div className = "main">
       <div className = {`Test m-6 ${himelodyFont.className}`}>
          <h1>Hey! My name is</h1>
-         <div className = "coloumn"> <Image src="/Letters/Qs/1.png" alt="testtest" width="100" height="100"/> </div>
-         <div className = "coloumn"> <Image src="/Letters/As/5.png" alt="test2" width="100" height="100"/></div>
-         <div className = "coloumn"> <Image src="/Letters/Zs/9.png" alt="test3" width="100" height="100"/></div>
-         <div className = "coloumn"> <Image src="/Letters/Is/13.png" alt="test4" width="100" height="100"/></div>
+          <QAZI/>
       </div>
+    </div>
+    <div style={{height: '600px', width: '100%', position: 'relative'}}>
+      <LogoWall
+      items={logoImgs}
+      direction='horizontal'
+      pauseOnHover={false}
+      size='clamp(8rem, 1rem + 20vmin, 25rem)'
+      duration='60s'
+      bgColor='#060606'
+      bgAccentColor='#111111'
+      /> 
+    </div>
+    <div>
+      <TiltedCard
+      imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+      altText="Kendrick Lamar - GNX Album Cover"
+      captionText="Kendrick Lamar - GNX"
+      containerHeight="300px"
+      containerWidth="300px"
+      imageHeight="300px"
+      imageWidth="300px"
+      rotateAmplitude={12}
+      scaleOnHover={1.2}
+      showMobileWarning={false}
+      showTooltip={true}
+      displayOverlayContent={true}
+      overlayContent={
+        <p className="tilted-card-demo-text">
+          Kendrick Lamar - GNX
+        </p>
+      }
+    />
     </div>
     </div>
   );
