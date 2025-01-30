@@ -11,7 +11,7 @@ function LogoWall({
   duration = "60s",
   textColor = "#ffffff",
   bgColor = "#060606",
-  bgAccentColor = "#111111"
+  bgAccentColor = "#060606"
 }) {
   const [isPaused, setIsPaused] = useState(false);
 

@@ -9,18 +9,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background-image: url('/backgroundImage.png');
+    /* background-image: url('/backgroundImage.png'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: "100vh";
-    --background: rgb(47, 3, 75);
+    --background: rgb(37, 37, 37);
     --foreground: #ffffff;
   }
 }
 
 .backgroundImage {
-  background-image: url('/backgroundImage.png');
+  /* background-image: url('/backgroundImage.png'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,6 +36,8 @@ body {
 .main {
   text-align: center;
   font-size: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .Test {
@@ -44,9 +46,91 @@ body {
   justify-content: center;
   text-align: center;
   height:100vh;
+  z-index: 1;
+}
+
+.ParagraphStuff {
+  font-size: 20px;
+  margin-left: 20px;
+  line-height: 40px;
+}
+
+.BGWaves {
+  z-index: -1;
 }
 
 .column {
   flex: 33.3%;
   padding: 5px;
+}
+
+.ProjectsTitleCard {
+  padding-left: 10%;
+  padding-right:10%;
+  display: flex;
+  align-items: center; 
+  gap: 20px;
+  padding-top: 5%;
+}
+
+.ProjectTitles {
+  font-size: 45px;
+  text-align: left; 
+  margin-bottom: 5px;
+}
+
+.tilted-card-text {
+  font-weight: 900;
+  text-transform: capitalize;
+  box-shadow: 0 5px 30px #06060659;
+  border-radius: 15px;
+  color: #fff;
+  background: #0006;
+  padding: .5rem 1em;
+  letter-spacing: -.5px;
+  margin: 2em;
+}
+
+.buttons {
+  display: flex; 
+  gap: 20px; 
+  padding: 10px; 
+  font-size: 24px;
+}
+
+.buttonNormal {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonWrapper {
+  display: flex;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+.ProjectTitlesWrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  gap: 10px;
+  justify-content: center;
+}
+
+.button-alignment {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-left: 20px;
+  margin-bottom:10px;
 }
