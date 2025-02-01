@@ -1,0 +1,31 @@
+.background {
+    display: inline-block;
+    width: 20vw;
+    height: 15vh;
+    text-align: center;
+    font-size: 24px;
+    background: #1A1A1A;
+    border-radius: 10px;
+}
+
+
+.background h1 {
+    margin-top: 1vh;
+    font-weight: 600;
+}
+
+.logo {
+    width: 5vh; 
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; 
+    margin-top: 3vh;
+    filter: invert(100%);
+}
+
+.Parents {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1%;
+}

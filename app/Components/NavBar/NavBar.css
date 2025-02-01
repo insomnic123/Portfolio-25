@@ -1,0 +1,53 @@
+/* Navbar Container */
+.navBar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.21);
+    backdrop-filter: blur(10px);
+    height: 75px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qaziContainer {
+    display: flex;
+    align-items: center;
+    padding-left: 0.25vw;
+    margin-top: -10vh;
+}
+
+.navCenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10%;
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.iconImage {
+    width: 30px;  
+    height: 30px;
+}
+
+.qaziContainer img {
+    width: 40px; 
+    height: 40px;
+}
