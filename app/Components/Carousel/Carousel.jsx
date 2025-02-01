@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
 import {
   PrevButton,
   NextButton,
@@ -13,6 +13,22 @@ import "./Carousel.css";
 const EmblaCarousel = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    emblaApi.on("pointerDown", () => {
+      document.querySelectorAll(".embla__slide a").forEach((link) => {
+        link.style.pointerEvents = "none"; 
+      });
+    });
+
+    emblaApi.on("pointerUp", () => {
+      document.querySelectorAll(".embla__slide a").forEach((link) => {
+        link.style.pointerEvents = "auto"; 
+      });
+    });
+  }, [emblaApi]);
 
   const onNavButtonClick = useCallback((emblaApi) => {
     const autoplay = emblaApi?.plugins()?.autoplay;
@@ -47,7 +63,7 @@ const EmblaCarousel = (props) => {
             >
               <img
                 src={slide.image}
-                alt={`Slide ${slide.index}`}
+                alt={`Slide ${index}`} 
                 className="embla__slide__img"
               />
             </a>
