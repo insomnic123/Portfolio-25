@@ -169,17 +169,37 @@ body {
   height:auto;
 }
 
-@media (max-width: 1105px) {
+@media (max-width: 1550px) {
   .scrollForMore {
     display: none;
   }
 }
 
-@media (max-height: 830px) {
+@media (max-height: 750px) {
   .scrollForMore {
     display: none;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    display: none;
+  }
+  
+  .mobile-warning {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-warning {
+    display: none;
+  }
+}
+
 
 html {
   scroll-behavior: smooth;

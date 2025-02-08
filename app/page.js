@@ -93,16 +93,20 @@ const sliderData = [
 export default function Home() {
   return (
   <>
+  <div className="mobile-warning">Sorry! The site is not optimized for mobile yet.</div>
+  <div className="main-content">
   <NavigationBar/>
     <div className = "main">
       <div id = "home" className = {`Test ${himelodyFont.className}`}>
          <h1>Hey! My name is</h1>
          <div className = "qaziComponent"><QAZI/></div>
+         <div>
           <p className = {`aboutMeText ${himelodyFont.className}`}>I'm a Gr. 11 Student in Toronto, Canada who started 
             programming for fun in Gr. 6. Since then, I've made countless projects, picked up new languages such as Java, 
             and have continued learning new skills which range from Game Development, Web Development, to even making bots for 
             online events!
           </p>
+        </div>
           <Image className = "scrollForMore" src="/SFMArrow.png" width="150" height="150" alt="scroll for more"/>
       </div>
       <BackgroundWaves
@@ -300,7 +304,7 @@ export default function Home() {
           <SkillButton txt="Notion" src="./Logos/icons8-notion.svg" alt="Notion Icon from Icons8"/>
         </div>
 
-    
+        </div>
     </>
   );
 }
