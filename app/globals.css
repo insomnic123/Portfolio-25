@@ -34,7 +34,7 @@ body {
 
 .main {
   text-align: center;
-  font-size: 100px;
+  font-size: 75px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -47,24 +47,27 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height:100vh;
-  padding-top: 10vh;
+  height: 1vh;
+  padding-top: 43vh;
   z-index: 1;
 }
 
 .Test h1 {
-  margin-top: -40vh; 
+  margin-top: -15vh; 
 }
 
 .qaziComponent {
   margin-top: -52vh; 
 }
 
+.qaziContainer {
+  margin-top: -42vh;
+}
 
 .ParagraphStuff {
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 20px;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .BGWaves {
@@ -88,7 +91,7 @@ body {
 }
 
 .ProjectTitles {
-  font-size: 45px;
+  font-size: 35px;
   text-align: left; 
   margin-bottom: 5px;
 }
@@ -152,8 +155,8 @@ body {
 
 .GenericTitle {
   text-align:center;
-  font-size: 45px;
-  padding: 0.5%;
+  font-size: 35px;
+  padding: 1%;
 }
 
 .scrollForMore {
@@ -166,13 +169,13 @@ body {
   height:auto;
 }
 
-@media (max-width: 1275px) {
+@media (max-width: 1105px) {
   .scrollForMore {
     display: none;
   }
 }
 
-@media (max-height: 895px) {
+@media (max-height: 830px) {
   .scrollForMore {
     display: none;
   }
@@ -188,7 +191,7 @@ html {
   left: 50%;
   line-height: 50px;
   transform: translateX(-50%);
-  font-size: 40px;
+  font-size: 30px;
   background: rgba(255, 255, 255, 0.01); 
   backdrop-filter: blur(5px);
   box-shadow: 0 0 8px 8px rgb(81, 81, 81) ;

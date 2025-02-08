@@ -16,7 +16,7 @@ const NavigationBar = () => {
     <header className="navBar">
       <nav className="navContainer">
         {/* Left Section: QAZI Component */}
-        <div className="qaziContainer">
+        <div className = "qaziContainer">
           <a href="/#home"><QAZI/></a>
         </div>
 
